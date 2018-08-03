@@ -1,0 +1,401 @@
+.center {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.center_A {
+    width: 90%;
+    margin: 0 auto;
+    height: calc(100vh - 64px);
+    background-image: url(../img/pic1.png);
+    background-size: cover;
+}
+
+.center_a_modelbg {
+    height: 100%;
+    width: 100%;
+    background-image: url(../img/bannerBackground.png);
+    background-size: contain;
+    opacity: 0.7;
+}
+
+.center_a_model {
+    padding: 20px;
+    width: 500px;
+    height: 200px;
+    background: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    opacity: 0.8;
+    text-align: center;
+}
+
+.center_a_model h2 {
+    margin-top: 30px;
+    font-size: 32px;
+    font-family: myFont;
+}
+
+.center_a_model h5 {
+    margin-top: 8px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.center_a_model .form {
+    margin-top: 20px;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.center_a_model .form input {
+    width: 280px;
+    height: 32px;
+    padding: 0 10px;
+    border: 2px solid #f1f1f1;
+    border-color: #ffca36;
+}
+
+.center_a_model .form button {
+    margin-left: 8px;
+    width: 120px;
+    height: 36px;
+    border-radius: 0;
+    background: #ffca36;
+    padding: 0 16px;
+}
+
+.center_a_model .form button:hover {
+    background: #333;
+    color: #fff;
+}
+
+.center_B {
+    width: 90%;
+    /*height: 516px;*/
+    padding: 50px 0;
+    margin: 0 auto;
+}
+
+.center_B_center {
+    text-align: center;
+}
+
+.center_B_center {
+    font-size: 24px;
+    /*    font-family: "Gotham A","Gotham B",-apple-system,"San Francisco","Helvetica Neue",Roboto,"Segoe WP","Segoe UI",sans-serif; */
+}
+
+.center_B_center h2 {
+    margin-bottom: 30px;
+}
+
+.center_B_center .photoUl ul li {
+    position: relative;
+    width: 32%;
+    float: left;
+    /*   height: 464px;*/
+    overflow: hidden;
+}
+
+.center_B_center .photoUl ul li p {
+    height: 72px;
+    margin: 7px 0;
+    font-size: 13px;
+    line-height: 24px;
+}
+
+.center_B_center .photoUl ul li button {
+    height: 36px;
+    width: 90px;
+    background: #b9ddd8;
+    ;
+    color: #333;
+}
+
+.center_B_center .photoUl ul li:first-child button {
+    background: #ffca36;
+}
+
+.center_B_center .photoUl ul li:last-child button {
+    background: #f79b7f;
+    ;
+}
+
+.center_B_center .photoUl ul li:first-child {
+    margin-right: 2%;
+}
+
+.center_B_center .photoUl ul li:last-child {
+    margin-left: 2%;
+}
+
+.liDiv {
+    position: absolute;
+    height: 36px;
+    line-height: 36px;
+    width: 150px;
+    background: #fff;
+    top: 200px;
+}
+
+.center_B_center .photoUl ul li img {
+    width: 100%;
+    height: calc(width);
+}
+
+.center_C {
+    width: 90%;
+    height: 460px;
+    margin: 0 auto 50px;
+    position: relative;
+}
+
+.center_c_bg {
+    height: 100%;
+    width: calc(50% + 100px);
+    background-image: url('../img/pic4.png');
+    background-size: contain;
+}
+
+.center_c_content {
+    position: absolute;
+    width: calc(50% - 80px);
+    padding: 30px;
+    right: 0;
+    top: 30%;
+    background: #fff;
+}
+
+.center_c_content h2 {
+    font-size: 32px;
+    line-height: 1.125;
+    font-style: italic;
+}
+
+.center_c_content p {
+    font: 87.5%/1.3572 -apple-system, "San Francisco", "Helvetica Neue", Roboto, "Segoe WP", "Segoe UI", sans-serif;
+    margin-top: 10px;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.center_c_content button {
+    margin-top: 32px;
+    padding: 0 16px;
+    background: #ffca36;
+    color: #333;
+    width: 90px;
+    height: 36px;
+}
+
+.center_D {
+    color: #333;
+    margin-top: 50px;
+    height: calc(100vh - 64px);
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.center_D ul {
+    display: inline-block;
+    height: 100%;
+    position: absolute;
+}
+
+.center_D ul li {
+    height: 100%;
+    float: left;
+}
+
+.center_D ul .li01 {
+    background-image: url('../img/pic6.jpeg');
+}
+
+.center_D ul .li02 {
+    background-image: url('../img/pic7.jpeg');
+}
+
+.center_D ul .li03 {
+    background-image: url('../img/pic8.jpeg');
+}
+
+.center_D ul li .li_con {
+    height: calc(200px);
+    padding: 32px;
+    width: 60%;
+    margin: 20% auto;
+    background: #fff;
+    text-align: center;
+    color: #333;
+}
+
+.center_D ul li .li_con h3 {
+    font-style: italic;
+    font-size: 32px;
+    line-height: 1.125;
+}
+
+.center_D ul li .li_con p {
+    margin-top: 8px;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.center_D ul li .li_con button {
+    margin-top: 32px;
+    padding: 0 16px;
+    background: #ffca36;
+    color: #333;
+    width: 90px;
+    height: 36px;
+}
+
+.center_D .d_btn {
+    cursor: pointer;
+    text-align: center;
+    height: 64px;
+    line-height: 48px;
+    font-size: 64px;
+    width: 64px;
+    z-index: 999;
+    background: #fff;
+    top: calc(50vh - 32px);
+    position: absolute;
+}
+
+.center_D .pgleft {
+    left: 0;
+}
+
+.center_D .pgright {
+    right: 0;
+}
+
+.center_D .li_con {
+    height: calc(200px);
+    padding: 32px;
+    width: 60%;
+    margin: auto;
+    background: #fff;
+    text-align: center;
+    color: #333;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.center_D .li_con h3 {
+    font-family: myFont;
+    /*  font-style: italic; */
+    font-size: 32px;
+    line-height: 1.125;
+}
+
+.center_D .li_con p {
+    margin-top: 8px;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.center_D .li_con button {
+    margin-top: 32px;
+    padding: 0 16px;
+    background: #ffca36;
+    color: #333;
+    width: 90px;
+    height: 36px;
+}
+
+.center_D .li_con button:hover,
+.center_c_content button:hover,
+.center_B_center .photoUl ul li button:hover {
+    background: #333;
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    .center_A {
+        width: 100%;
+    }
+    .center_a_model {
+        width: 300px;
+        height: 200px;
+    }
+    .center_a_model h5 {
+        font-size: 12px;
+        line-height: 24px;
+    }
+    .center_a_model .form input {
+        width: 160px;
+    }
+    .center_a_model .form button {
+        width: 80px;
+    }
+    .center_B_center .photoUl ul li {
+        width: 100%;
+        margin-top: 30px;
+    }
+    .center_c_content {
+        width: calc(80% - 80px);
+        top: 15%;
+    }
+    .center_c_content p {
+        font: 87.5%/1.3572 -apple-system, "San Francisco", "Helvetica Neue", Roboto, "Segoe WP", "Segoe UI", sans-serif;
+        font-size: 87.5%;
+        line-height: 1.3572;
+        margin-top: 10px;
+        font-size: 12px;
+        line-height: 18px;
+    }
+    .center_D {
+        height: calc(100vh - 234px);
+    }
+    .content-part {
+        margin-top: 0px;
+    }
+    .part-tese {
+        height: 350px;
+    }
+    .part-tese .gallery_container {
+        height: 350px;
+    }
+    .gallery_container .gallery_wrap {
+        height: 350px;
+    }
+    .part-tese .gallery_container .gallery_wrap {
+        height: 320px;
+        margin-top: -35%;
+    }
+    .gallery_container .prev,
+    .gallery_container .next {
+        height: 320px;
+        top: 10px;
+    }
+    .center_D .li_con {
+        padding: 32px;
+        height: calc(120px);
+    }
+    .center_D .li_con h3 {
+        font-style: italic;
+        font-size: 18px;
+        line-height: 1.125;
+    }
+    .center_D .li_con p {
+        margin-top: 8px;
+        font-size: 12px;
+        line-height: 18px;
+    }
+    .center_D .li_con button {
+        margin-top: 16px;
+    }
+}
