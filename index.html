@@ -67,6 +67,101 @@
             background-repeat: no-repeat;
             background-position: left;
         }
+		
+		
+		/* Slideshow container */
+		.slideshow-container {
+		  max-width: 1500px;
+		  position: relative;
+		  margin: auto;
+		}
+
+		/* Next & previous buttons */
+		.prev, .next {
+		  cursor: pointer;
+		  position: absolute;
+		  top: 50%;
+		  width: auto;
+		  padding: 16px;
+		  margin-top: -22px;
+		  color: white;
+		  background-color: #FFC634;
+		  font-weight: bold;
+		  font-size: 18px;
+		  transition: 0.6s ease;
+		  border-radius: 0 3px 3px 0;
+		}
+
+		/* Position the "next button" to the right */
+		.next {
+		  right: 0;
+		  border-radius: 3px 0 0 3px;
+		}
+
+		/* On hover, add a black background color with a little bit see-through */
+		.prev:hover, .next:hover {
+		  background-color: rgba(0,0,0,0.8);
+		}
+
+		/* Caption text */
+		.text {
+		  color: #f2f2f2;
+		  font-size: 15px;
+		  padding: 8px 12px;
+		  position: absolute;
+		  bottom: 8px;
+		  width: 100%;
+		  text-align: center;
+		}
+		.mySlides {display: none}
+		img {vertical-align: middle;}
+
+		/* The dots/bullets/indicators */
+		.dot {
+		  cursor: pointer;
+		  height: 15px;
+		  width: 15px;
+		  margin: 0 2px;
+		  background-color: #FFF;
+		  border-radius: 50%;
+		  border: 2px solid black;
+		  display: inline-block;
+		  transition: background-color 0.6s ease;
+		}
+
+		.active, .dot:hover {
+		  background-color: #FFC634;
+		}
+
+		/* Fading animation */
+		.fade {
+		  -webkit-animation-name: fade;
+		  -webkit-animation-duration: 1.5s;
+		  animation-name: fade;
+		  animation-duration: 1.5s;
+		}
+
+		@-webkit-keyframes fade {
+		  from {opacity: .4} 
+		  to {opacity: 1}
+		}
+
+		@keyframes fade {
+		  from {opacity: .4} 
+		  to {opacity: 1}
+		}
+
+		/* On smaller screens, decrease text size */
+		@media only screen and (max-width: 300px) {
+		  .prev, .next,.text {font-size: 11px}
+		}
+		
+		
+		
+		
+		
+		
+		
         @media (max-width: 768px){
             .font01{
                 width: 360px;
@@ -172,90 +267,68 @@
                  </div>
                  <div class="c"></div>
             </div>
-            <div class="c"></div>
-            <div class="center_D">
-               <div class="content-part part-tese">
-                    <!-- <div class="content-title"></div> -->
-                    <div class="gallery_container">
-                        
-                      <div class="gallery_wrap threeD_gallery_wrap" >
+            
+			
+			<div class="center_D">
 
-                        <div href="javascript:;" class="gallery_item threeD_gallery_item front_side">
-                          <img src="img/pic5.png" class="show">
-                          <div class="line-t"></div>
-                          <div class="line-r"></div>
-                          <div class="line-b"></div>
-                          <div class="line-l"></div>
-                          <div class="li_con">
-                            <h3>女士优先</h3>
-                            <p>给女生翻牌权利，让她们选择自己最喜欢的约会对象。拒绝无厘头的骚扰。</p>
-                            <button><i>如何使用</i></button>
-                           </div>
-                        </div>
-                        <div href="javascript:;" class="gallery_item threeD_gallery_item gallery_right_middle">
-                          <img src="img/pic6.png" class="show">
-                          <div class="line-t"></div>
-                          <div class="line-r"></div>
-                          <div class="line-b"></div>
-                          <div class="line-l"></div>
-                          <div class="li_con">
-                            <h3>跟“照騙”說再見</h3>
-                            <p>LM Club 的24/7无时差在线客服为每一位会员提供真人验证服务，保证你在平台里接触到每一个人都拥有一个有趣的灵魂。</p>
-                            <button><i>如何使用</i></button>
-                           </div>
-                        </div>
-                        <div href="javascript:;" class="gallery_item threeD_gallery_item gallery_left_middle">
-                          <img src="img/pic7.png" class="show">
-                          <div class="line-t"></div>
-                          <div class="line-r"></div>
-                          <div class="line-b"></div>
-                          <div class="line-l"></div>
-                          <div class="li_con">
-                            <h3>分享快樂</h3>
-                            <p>能让我们乐此不疲的事情莫过于看到贴心地会员给我们发来了在平台配对成功的暖心小文。</p>
-                            <button><i>如何使用</i></button>
-                           </div>
-                        </div>
-                        
-                        
-                        
-                        <!-- <div href="javascript:;" class="gallery_item threeD_gallery_item gallery_out">
-                          <img src="img/pic8.jpeg" class="show">
-                          <div class="line-t"></div>
-                          <div class="line-r"></div>
-                          <div class="line-b"></div>
-                          <div class="line-l"></div>
-                          <div class="li_con">
-                            <h3>女士优先</h3>
-                            <p>给女生翻牌权利，让她们选择自己最喜欢的约会对象。拒绝无厘头的骚扰。</p>
-                            <button><i>如何使用</i></button>
-                           </div>
-                        </div> -->
-                      </div>
-                      <a class="prev" href="javascript:;"></a>
-                      <a class="next" href="javascript:;"></a>
-                    </div>
-                  </div>
-                    <!-- <ul>
-                        <li class="li01">
-                            <div class="li_con">
-                                <h3>迈出第一步</h3>
-                                <p>女士优先可以鼓励一段关系从一开始就平等。</p>
-                                <button><i>如何使用</i></button>
-                            </div>
-                        </li>
-                        <li class="li02">
-                            <div class="li_con"></div>
-                        </li>
-                        <li class="li03">
-                            <div class="li_con"></div>
-                        </li>
-                    </ul>
-                    <div class="d_btn pgleft"><</div>
-                    <div class="d_btn pgright">></div> -->
-                <div class="c"></div>
-            </div>
+					<div class="slideshow-container">
+						<div class="mySlides fade">
+							  <img src="img/pic5.png" style="width:100%">
+							  <div class="line-t"></div>
+							  <div class="line-r"></div>
+							  <div class="line-b"></div>
+							  <div class="line-l"></div>
+							  <div class="li_con">
+								<h3>女士优先</h3>
+								<p>给女生翻牌权利，让她们选择自己最喜欢的约会对象。拒绝无厘头的骚扰。</p>
+								<button><i>如何使用</i></button>
+							   </div>
+						</div>
+						
+						<div class="mySlides fade">
+							  <img src="img/pic6.png" style="width:100%">
+							  <div class="line-t"></div>
+							  <div class="line-r"></div>
+							  <div class="line-b"></div>
+							  <div class="line-l"></div>
+							  <div class="li_con">
+								<h3>跟“照騙”說再見</h3>
+								<p>LM Club 的24/7无时差在线客服为每一位会员提供真人验证服务，保证你在平台里接触到每一个人都拥有一个有趣的灵魂。</p>
+								<button><i>如何使用</i></button>
+							   </div>
+						</div>
+							
+						<div class="mySlides fade">
+							  <img src="img/pic7.png" style="width:100%">
+							  <div class="line-t"></div>
+							  <div class="line-r"></div>
+							  <div class="line-b"></div>
+							  <div class="line-l"></div>
+							  <div class="li_con">
+								<h3>分享快樂</h3>
+								<p>能让我们乐此不疲的事情莫过于看到贴心地会员给我们发来了在平台配对成功的暖心小文。</p>
+								<button><i>如何使用</i></button>
+							   </div>
+						</div>
+							
+						<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+						<a class="next" onclick="plusSlides(1)">&#10095;</a>
+					
+
+						<div style="text-align:center">
+						  <span class="dot" onclick="currentSlide(1)"></span> 
+						  <span class="dot" onclick="currentSlide(2)"></span> 
+						  <span class="dot" onclick="currentSlide(3)"></span> 
+						</div>
+					</div>
+ 
+                
+            
+			</div>
+
 		</div>	
+		
+		
         <div class="footer">
             <div class="footer_nav">
                 <ul>
@@ -287,67 +360,34 @@
             <p>© 2018 LMclub | 保留所有权利  | 中文 (简体)</p>
         </div>
 	</div>
-	<script type="text/javascript" src="js/jquery-1.10.2/jquery.js"></script>
-    <script src="js/jquery-yys-slider.js"></script>
-	<script type="text/javascript">
-        $(function(){
-            $(document).click(function(){
-            $('.nav-list').removeClass('open')
-            })
-            $('.nav-menu,.nav-list').click(function(e){e.stopPropagation()})
-            $('nav').find('.nav-menu').click(function(e){
-                $('.nav-list').toggleClass('open')
-            })
-            $('.content-part.part-tese').addClass('show');
-            $('.gallery_container').gallery_slider({imgNum: 3});
-            restJs();
-        })
-        $(window).resize(function(){
-             location.reload();
-             restJs();
-        });
-		
-        function restJs(){
+	
+	<script>
+	var slideIndex = 1;
+	showSlides(slideIndex);
 
-            var height =  document.documentElement.clientHeight ;
-            $(".center_A").height(height-64 );
-          /*  var width = $(".center_D").width()
-            var clone = $(".center_D").find("ul li").first().clone();//克隆第一张图片
-            $(".center_D ul").append(clone);//复制到列表最后
-            $(".center_D ul").width(width*$(".center_D ul li").length);
-            $(".center_D ul li").width(width);
+	function plusSlides(n) {
+	  showSlides(slideIndex += n);
+	}
 
-            var iNow=0;
-            var ul = $(".center_D ul");
-            var size = $(".center_D").find("ul li").size();
-            $(".center_D .pgleft").click(function () {
-                console.log(111)
-                iNow--;
-                console.log(size)
-                if (iNow == -1) {
-                    ul.css({ left: -(size - 1) * width });
-                    iNow = size - 2;
-                }
-                ul.stop().animate({ left: -iNow * width }, 500);
-           });
-            $(".center_D .pgright").click(function () {
-                iNow++;
-                if (iNow == size) {
-                        ul.css({ left: 0 });
-                        iNow = 1;
-                }
-                ul.stop().animate({ left: -iNow * width }, 500);
-           });*/
+	function currentSlide(n) {
+	  showSlides(slideIndex = n);
+	}
 
-
-
-            var imgWidth = $(".photoUl ul li").width();
-            /*imgWidth = photoUlWidth*0.32;*/
-            $('.center_B_center .photoUl ul li img').height(imgWidth);
-            $('.center_B_center .photoUl ul li .liDiv01').css('top',imgWidth-66+"px");
-            $('.center_B_center .photoUl ul li .liDiv02').css('top',imgWidth-imgWidth/2-30+"px");
-            $('.center_B_center .photoUl ul li .liDiv03').css('top',imgWidth-156+"px").css('right',0);
-        }
+	function showSlides(n) {
+	  var i;
+	  var slides = document.getElementsByClassName("mySlides");
+	  var dots = document.getElementsByClassName("dot");
+	  if (n > slides.length) {slideIndex = 1}    
+	  if (n < 1) {slideIndex = slides.length}
+	  for (i = 0; i < slides.length; i++) {
+		  slides[i].style.display = "none";  
+	  }
+	  for (i = 0; i < dots.length; i++) {
+		  dots[i].className = dots[i].className.replace(" active", "");
+	  }
+	  slides[slideIndex-1].style.display = "block";  
+	  dots[slideIndex-1].className += " active";
+	}
 	</script>
 </body>
 </html>
