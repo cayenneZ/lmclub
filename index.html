@@ -11,6 +11,8 @@
     <link rel="stylesheet" type="text/css" href="css/common.css" charset="utf-8">
     <link rel="stylesheet" href="css/jquery-yys-slider.css">
     <link rel="stylesheet" type="text/css" href="css/index.css" charset="utf-8">
+	<!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="css/swiper.min.css">
     <style type="text/css">
         .font01{
             width: 480px;
@@ -82,7 +84,7 @@
 		  position: absolute;
 		  top: 50%;
 		  width: auto;
-		  padding: 16px;
+		  padding: 22px;
 		  margin-top: -22px;
 		  color: white;
 		  background-color: #FFC634;
@@ -97,7 +99,14 @@
 		  right: 0;
 		  border-radius: 3px 0 0 3px;
 		}
-
+		/* Position the "prev button" to the left */
+		.prev {
+		  left: 0;
+		  border-radius: 3px 0 0 3px;
+		}
+		
+		
+		
 		/* On hover, add a black background color with a little bit see-through */
 		.prev:hover, .next:hover {
 		  background-color: rgba(0,0,0,0.8);
@@ -156,7 +165,29 @@
 		  .prev, .next,.text {font-size: 11px}
 		}
 		
-		
+		.swiper-container {
+		  width: 100%;
+		  height: 100%;
+		}
+		.swiper-slide {
+		  text-align: center;
+		  font-size: 18px;
+		  background: #fff;
+
+		  /* Center slide text vertically */
+		  display: -webkit-box;
+		  display: -ms-flexbox;
+		  display: -webkit-flex;
+		  display: flex;
+		  -webkit-box-pack: center;
+		  -ms-flex-pack: center;
+		  -webkit-justify-content: center;
+		  justify-content: center;
+		  -webkit-box-align: center;
+		  -ms-flex-align: center;
+		  -webkit-align-items: center;
+		  align-items: center;
+		}
 		
 		
 		
@@ -269,10 +300,12 @@
             </div>
             
 			
-			<div class="center_D">
-
-					<div class="slideshow-container">
-						<div class="mySlides fade">
+			
+			<div class="swiper-container center_D">
+					<div class="swiper-button-prev prev"></div>
+					<div class="swiper-button-next next"></div>
+					<div class="swiper-wrapper">
+						<div  class="swiper-slide">
 							  <img src="img/pic5.png" style="width:100%">
 							  <div class="line-t"></div>
 							  <div class="line-r"></div>
@@ -285,7 +318,7 @@
 							   </div>
 						</div>
 						
-						<div class="mySlides fade">
+						<div  class="swiper-slide">
 							  <img src="img/pic6.png" style="width:100%">
 							  <div class="line-t"></div>
 							  <div class="line-r"></div>
@@ -298,7 +331,7 @@
 							   </div>
 						</div>
 							
-						<div class="mySlides fade">
+						<div class="swiper-slide">
 							  <img src="img/pic7.png" style="width:100%">
 							  <div class="line-t"></div>
 							  <div class="line-r"></div>
@@ -309,21 +342,13 @@
 								<p>能让我们乐此不疲的事情莫过于看到贴心地会员给我们发来了在平台配对成功的暖心小文。</p>
 								<button><i>如何使用</i></button>
 							   </div>
-						</div>
-							
-						<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-						<a class="next" onclick="plusSlides(1)">&#10095;</a>
-					
-
-						<div style="text-align:center">
-						  <span class="dot" onclick="currentSlide(1)"></span> 
-						  <span class="dot" onclick="currentSlide(2)"></span> 
-						  <span class="dot" onclick="currentSlide(3)"></span> 
-						</div>
+						</div>									
 					</div>
- 
+					
+					<!-- Add Pagination -->
+					<div class="swiper-pagination"></div>
                 
-            
+				
 			</div>
 
 		</div>	
@@ -361,33 +386,34 @@
         </div>
 	</div>
 	
-	<script>
-	var slideIndex = 1;
-	showSlides(slideIndex);
 
-	function plusSlides(n) {
-	  showSlides(slideIndex += n);
-	}
+	<!-- Swiper JS -->
+  <script src="js/swiper.min.js"></script>
 
-	function currentSlide(n) {
-	  showSlides(slideIndex = n);
-	}
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      slidesPerView: 1,
+      spaceBetween: 30,
+	  speed: 2000,
+	  loop: true,
+	  slideToClickedSlide: true,
+	grabCursor: true,
+	effect: 'coverflow',
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+           
+	navigation: {
+	  nextEl: '.swiper-button-next',
+	  prevEl: '.swiper-button-prev',
+	},
+    });
+  </script>
 
-	function showSlides(n) {
-	  var i;
-	  var slides = document.getElementsByClassName("mySlides");
-	  var dots = document.getElementsByClassName("dot");
-	  if (n > slides.length) {slideIndex = 1}    
-	  if (n < 1) {slideIndex = slides.length}
-	  for (i = 0; i < slides.length; i++) {
-		  slides[i].style.display = "none";  
-	  }
-	  for (i = 0; i < dots.length; i++) {
-		  dots[i].className = dots[i].className.replace(" active", "");
-	  }
-	  slides[slideIndex-1].style.display = "block";  
-	  dots[slideIndex-1].className += " active";
-	}
-	</script>
+
+
+	
 </body>
 </html>
